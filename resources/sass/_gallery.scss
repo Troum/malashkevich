@@ -1,0 +1,28 @@
+#gallery.fullscreen {
+  height: 100vh;
+}
+
+.images {
+  line-height: 0;
+  -webkit-column-count: 4;
+  -webkit-column-gap:   0.25rem;
+  -moz-column-count:    4;
+  -moz-column-gap:      0.25rem;
+  column-count:         4;
+  column-gap:           0.25rem;
+}
+
+.item {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  width: 100% !important;
+  height: auto !important;
+}
+
+.gallery-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  height: 100%;
+  overflow-y: scroll;
+}
+

@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-vue/src/index.scss';
+@import "~vue-snotify/styles/material";
+@import "preloader";
+@import "transitions";
+@import "gallery";
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100%;
+}
+
+#app {
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.fullscreen {
+  min-height: 100vh;
+}
+
+.footer {
+  height: 80px;
+}
+
+
