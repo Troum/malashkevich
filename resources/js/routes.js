@@ -11,10 +11,12 @@ import GalleryComponent from './components/GalleryComponent';
 import FeedbackComponent from './components/FeedbackComponent';
 import ScheduleComponent from './components/ScheduleComponent';
 import AboutComponent from './components/AboutComponent';
-import CreatePhotosComponent from './components/dashboard_components/CreatePhotosComponent';
-import EditPhotoController from './components/dashboard_components/EditPhotoComponent';
-import ShowPhotosComponent from './components/dashboard_components/ShowPhotosComponent';
-import ShowPhotoComponent from './components/dashboard_components/ShowPhotoComponent';
+import CreatePhotosComponent from './components/dashboard_components/CreatePhotos';
+import EditPhotoController from './components/dashboard_components/EditPhoto';
+import ShowPhotosComponent from './components/dashboard_components/ShowPhotos';
+import ShowPhotoComponent from './components/dashboard_components/ShowPhoto';
+import About from './components/dashboard_components/About';
+import EditAbout from "./components/dashboard_components/EditAbout";
 
 Vue.use(VueRouter);
 
@@ -42,6 +44,14 @@ const router = new VueRouter({
                 {
                     path: 'photos/:photo',
                     component: ShowPhotoComponent
+                },
+                {
+                    path: 'about',
+                    component: About
+                },
+                {
+                    path: 'about/edit',
+                    component: EditAbout
                 }
             ]
         },

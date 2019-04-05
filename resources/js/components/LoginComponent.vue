@@ -34,7 +34,7 @@
         },
         methods: {
             submit() {
-                this.$axios.post('/auth/login', {
+                this.$axios.post('/api/auth/login', {
                     email: this.credentials.login,
                     password: this.credentials.password
                 }).then(response => {

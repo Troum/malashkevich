@@ -42,7 +42,7 @@
         },
         methods: {
             submit() {
-                this.$axios.post('/auth/register', {
+                this.$axios.post('/api/auth/register', {
                     name: this.credentials.name,
                     email: this.credentials.login,
                     password: this.credentials.password,

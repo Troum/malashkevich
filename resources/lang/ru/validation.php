@@ -150,12 +150,9 @@ return [
     */
 
     'attributes' => [
-        'name' => 'ФИО',
+        'name' => 'Имя',
         'email' => 'E-mail',
-        'phone' => 'Номер телефона',
-        'imei' => 'IMEI',
-        'document' => 'Фото документа',
-        'guarantee' => 'Фото гарантийного талона'
+        'photos' => 'Фотографии'
     ],
 
 ];

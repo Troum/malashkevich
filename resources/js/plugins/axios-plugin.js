@@ -4,7 +4,7 @@ let token = document.head.querySelector('meta[name="csrf-token"]');
 const AxiosPlugin = {
     install(Vue) {
         Vue.prototype.$axios = axios.create({
-            baseURL: 'http://localhost:8000/api/',
+            baseURL: 'http://localhost:8080/',
             headers: {
                 'Access-Control-Allow-Origin' : '*',
                 'X-Requested-With' : 'XMLHttpRequest',

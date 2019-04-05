@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\PhotoRequest;
 use App\Photo;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -34,9 +35,18 @@ class PhotoController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(PhotoRequest $request)
     {
-        //
+        try {
+            foreach ($request->file('photos') as $photo) {
+                $name = uniqid('img_') . '.' . $photo->getClientOriginalExtension();
+                Photo::create(['photo' => $name]);
+                $photo->move(public_path('images/photos/'), $name);
+            }
+            return response()->json(['success' => 'Фотографии успешно добавлены!'], Response::HTTP_OK);
+        } catch (\Exception $exception) {
+            return response()->json(['error' => 'Произошла ошибка: ' . $exception->getMessage()], Response::HTTP_CONFLICT);
+        }
     }
 
     /**

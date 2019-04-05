@@ -1,5 +1,6 @@
 <template>
-    <b-navbar :fixed="new RegExp('/login').test($route.path) || new RegExp('/register').test($route.path) || new RegExp('/dashboard/*').test($route.path) ? 'top' : false" toggleable="lg" type="light" variant="light" class="w-100">
+    <b-navbar :fixed="new RegExp('/login').test($route.path) || new RegExp('/register').test($route.path) || new RegExp('/dashboard/*').test($route.path) ? 'top' : false"
+              toggleable="lg" type="light" variant="light" class="w-100">
         <b-navbar-brand href="#"><router-link class="nav-link text-dark" to="/">MALASHKEVICH</router-link></b-navbar-brand>
         <b-navbar-toggle target="nav_collapse" />
         <b-collapse is-nav id="nav_collapse">

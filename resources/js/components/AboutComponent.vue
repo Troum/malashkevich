@@ -3,7 +3,7 @@
         <b-col cols="4" class="d-flex align-items-center bg-dark">
             <b-row class="w-100" align-h="center" align-v="center">
                 <b-col cols="6">
-                    <h1 class="display-1 text-white">I was wondering</h1>
+                    <h1 class="display-1 text-white"></h1>
                 </b-col>
             </b-row>
         </b-col>

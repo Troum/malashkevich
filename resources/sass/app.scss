@@ -2,6 +2,13 @@
 @import '~bootstrap/scss/bootstrap';
 @import '~bootstrap-vue/src/index.scss';
 @import "~vue-snotify/styles/material";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "~vue-sidebar-menu/src/scss/vue-sidebar-menu.scss";
+@import '~tui-editor/dist/tui-editor.css';
+@import '~tui-editor/dist/tui-editor-contents.css';
+@import '~codemirror/lib/codemirror.css';
+@import "material";
+@import "sidebar-menu-custom";
 @import "preloader";
 @import "transitions";
 @import "gallery";

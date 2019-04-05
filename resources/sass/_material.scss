@@ -1,0 +1,42 @@
+@import 'variables';
+// Shadows
+.z-depth-0 {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.z-depth-1 {
+  -webkit-box-shadow: $z-depth-1 !important;
+  box-shadow: $z-depth-1 !important;
+}
+.z-depth-1-half {
+  -webkit-box-shadow: $z-depth-1-half !important;
+  box-shadow: $z-depth-1-half !important;
+}
+.z-depth-2 {
+  -webkit-box-shadow: $z-depth-2 !important;
+  box-shadow: $z-depth-2 !important;
+}
+.z-depth-3 {
+  -webkit-box-shadow: $z-depth-3 !important;
+  box-shadow: $z-depth-3 !important;
+}
+.z-depth-4 {
+  -webkit-box-shadow: $z-depth-4 !important;
+  box-shadow: $z-depth-4 !important;
+}
+.z-depth-5 {
+  -webkit-box-shadow: $z-depth-5 !important;
+  box-shadow: $z-depth-5 !important;
+}
+
+input[type="file"], input[type="text"], input[type="email"], input[type="file"] + label, textarea {
+  border-radius: 0 !important;
+}
+
+div {
+  -webkit-transition: .4s ease-in-out;
+  -moz-transition: .4s ease-in-out;
+  -ms-transition: .4s ease-in-out;
+  -o-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}

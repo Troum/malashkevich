@@ -66,24 +66,16 @@ export default new MLCreate({
                 logout: 'Logout'
             },
             dashboardNav: {
-                photos: [
-                    {
-                        link: '',
-                        title: ''
-                    },
-                    {
-                        link: '',
-                        title: ''
-                    },
-                    {
-                        link: '',
-                        title: ''
-                    },
-                    {
-                        link: '',
-                        title: ''
-                    }
-                ]
+                photos: {
+                    title: 'Photos',
+                    all: 'Show all',
+                    add: 'Add more'
+                },
+                about: {
+                    title: 'About',
+                    add: 'Add about info',
+                    edit: 'Edit about info',
+                }
             },
             create: {
                 title: 'Choose or drag your photos',
@@ -152,6 +144,18 @@ export default new MLCreate({
                 login: 'Войти',
                 register: 'Зарегистрироваться',
                 logout: 'Выйти'
+            },
+            dashboardNav: {
+                photos: {
+                    title: 'Фото',
+                    all: 'Показать все фото',
+                    add: 'Добавить фото'
+                },
+                about: {
+                    title: 'Обо мне',
+                    add: 'Добавить информацию обо мне',
+                    edit: 'Редактировать информацию обо мне',
+                }
             },
             create: {
                 title: 'Добавьте или перетащите фотографии',
